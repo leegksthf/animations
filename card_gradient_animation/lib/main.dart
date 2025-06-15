@@ -46,8 +46,6 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
       end: 0.4,
     ).animate(_controller);
 
-    // 바운스 효과 -> animate 인자로 CurvedAnimation(parent: _controller, curve: Curves.bounceOut);
-
     _yRotateAnimation = Tween<double>(begin: 0, end: 0.2).animate(_controller);
 
     _controller.forward();
